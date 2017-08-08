@@ -1,0 +1,19 @@
+{
+  "name": "angularjs",
+  "version": "1.0.0",
+  "description": "Angularjs Home Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirror198829/Mirror198829.github.io.git"
+  },
+  "author": "Caojing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mirror198829/Mirror198829.github.io/issues"
+  },
+  "homepage": "https://github.com/Mirror198829/Mirror198829.github.io#readme"
+}
