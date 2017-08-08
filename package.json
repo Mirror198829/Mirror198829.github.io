@@ -20,8 +20,10 @@
     "angular": "1.5.11"
   },
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.5",
     "angular-route": "^1.5.11",
     "angular-ui-bootstrap": "^2.5.0",
+    "angular-ui-router": "^1.0.3",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
   }
