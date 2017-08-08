@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Mirror198829/Mirror198829.github.io/issues"
   },
-  "homepage": "https://github.com/Mirror198829/Mirror198829.github.io#readme"
+  "homepage": "https://github.com/Mirror198829/Mirror198829.github.io#readme",
+  "devDependencies": {
+    "angular": "1.5.11"
+  },
+  "dependencies": {
+    "angular-route": "^1.5.11",
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
 }

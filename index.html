@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules//bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	
+	<!-- <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script> -->
+	<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="personCtrl">
+
+<ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#/computers">电脑</a></li>
+    <li><a href="#/printers">打印机</a></li>
+    <li><a href="#/blabla">其他</a></li>
+</ul>
+ <button ng-click="openModal()">click</button>        
+<div ng-view></div>
+</div>
+
+<script>
+var app = angular.module('myApp',['ngRoute']);
+app.controller('personCtrl', function($scope,$location) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    $scope.fullName = function() {
+        return $scope.firstName + " " + $scope.lastName;
+
+    }
+    $scope.myUrl = $location.absUrl();
+    $scope.openModal=function(){
+    	alert(123)
+
+    }
+});
+app.config(function($routeProvider){
+	$routeProvider.when("/",{
+		template:'woshi '
+	}).
+	when('/computers',{
+		template:"computer"
+	})
+})
+</script>
+</body>
+</html>
