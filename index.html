@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>web</title>
+  <style type="text/css" media="screen">
+   body{background-color: #99CCFF} 
+   h1{text-align: center;color:#333;}
+   .circle{width: 100px;height: 100px;border-radius: 100%;margin: 10px 0;}
+   #circle1{background-color: #FF0066;animation:trans1 5s linear 2s infinite alternate;}
+   #circle2{background-color:#FFCC33;position: relative;left:0px;animation:move1 3s ease 1s infinite alternate;}
+   @keyframes trans1{
+    from {background: red;}
+    to {background: yellow;}
+   }
+   @keyframes move1{
+    0%  {left:10px；}
+    100% {left:1200px;}
+   }
+  </style>
+</head>
+<body>
+  <h1>来一些好玩的前端内容吧</h1>
+
+    <div id="circle1" class="circle"></div>
+
+    <div id="circle2" class="circle"></div>
+    
+</body>
+</html>
